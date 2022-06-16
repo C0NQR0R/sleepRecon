@@ -65,12 +65,9 @@ results=output/$company_name
 echo -e ""
 
 echo -e "$blue Directories are ready to use :D $end"
-echo -e ""
-echo -e ""
+
 
 }
-
-
 
 
 ################## Subdomain Enum ##################
@@ -185,9 +182,6 @@ echo ""
 }
 
 
-
-
-
 ################## Done Subdomain Enum ##################
 
 
@@ -263,7 +257,6 @@ echo -e "$bold[-] Done paramlist,php,aspx,jsp  $end"
 
 echo -e ""
 echo -e "$bold-------------------------------------------------------$end"
-
 echo -e ""
 
 	}
