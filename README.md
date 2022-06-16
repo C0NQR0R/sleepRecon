@@ -6,8 +6,8 @@ Automate simple recon tasks using bash script
 	- [SubFinder](https://github.com/projectdiscovery/subfinder)
 	- [Amass](https://github.com/OWASP/Amass)
 	- [AssetFinder](https://github.com/tomnomnom/assetfinder)
-	- [Httpx](https://github.com/projectdiscovery/httpx): To Probe For Working 8080,8443,80,443 Ports
-	- [waybackurls](https://github.com/tomnomnom/waybackurls)
+	- [Httpx](https://github.com/projectdiscovery/httpx)
+	- [waybackurls](https://github.com/tomnomnom/waybackurls)  
 	- [Gau](https://github.com/lc/gau)
 	- [unfurl](https://github.com/tomnomnom/unfurl)
 	- [Gowitness](https://github.com/sensepost/gowitness)
