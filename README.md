@@ -13,7 +13,6 @@ Automating Boring Recon stuff
 	- [Gowitness](https://github.com/sensepost/gowitness)
 
 
-https://github.com/tomnomnom/waybackurls
 2. online services:
   - [WayBackMachine](http://web.archive.org/)
   - [crt.sh](https://crt.sh/)
@@ -21,9 +20,9 @@ https://github.com/tomnomnom/waybackurls
 
 ## Installation:
 ```bash
-git clone https://github.com/bing0o/SubEnum.git
-chmod +x install.sh sleepRecon.sh
-sudo install.sh https://github.com/qaramany0x01/sleepRecon.git
+git clone https://github.com/qaramany0x01/sleepRecon.git
+cd sleepRecon && chmod +x install.sh sleepRecon.sh
+sudo ./install.sh 
 ```
 
 ## Usage:
