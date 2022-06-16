@@ -2,7 +2,7 @@
 Automating Boring Recon stuff 
 ### Available Tools and online services:
 1. Tools:
-  - [Findomain](https://github.com/Edu4rdSHL/findomain)
+        - [Findomain](https://github.com/Edu4rdSHL/findomain)
 	- [SubFinder](https://github.com/projectdiscovery/subfinder)
 	- [Amass](https://github.com/OWASP/Amass)
 	- [AssetFinder](https://github.com/tomnomnom/assetfinder)
