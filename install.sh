@@ -121,7 +121,7 @@ hash subfinder 2>/dev/null && printf "[!] subfinder is already installed.\n" || 
 hash amass 2>/dev/null && printf "[!] Amass is already installed.\n" || { printf "[+] Installing Amass!" && Amass; }
 hash assetfinder 2>/dev/null && printf "[!] Assetfinder is already installed.\n" || { printf "[+] Installing Assetfinder!" && Assetfinder; }
 hash httpx 2>/dev/null && printf "[!] httpx is already installed.\n" || { printf "[+] Installing httpx!" && Httpx; } 
-hash getallurls 2>/dev/null && printf "[!] getallurls is already installed.\n" || { printf "[+] Installing getallurls!" && Getallurls; }
+hash gau 2>/dev/null && printf "[!] getallurls is already installed.\n" || { printf "[+] Installing getallurls!" && Getallurls; }
 hash waybackurls 2>/dev/null && printf "[!] waybackurls is already installed.\n" || { printf "[+] Installing waybackurls!" && Waybackurls; }
 hash unfurl 2>/dev/null && printf "[!] unfurl is already installed.\n" || { printf "[+] Installing unfurl!" && Unfurl; }
 hash gf 2>/dev/null && printf "[!] gf is already installed.\n" || { printf "[+] Installing gf!" && Gf ; }
