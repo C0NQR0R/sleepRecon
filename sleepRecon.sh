@@ -214,11 +214,11 @@ gettingUrls(){
 	cd $PLC
 	echo -e ""
 
-	echo -e "$green Starting Urls Getallurls .... $end"
+	echo -e "$green Starting Urls gau .... $end"
 
-	spinner "${red}Getallurls ${end}" & PID="$!" 
-	getallurls -subs $domain_name 1> output/$company_name/urls/$domain_name-getallurls.txt 2> /dev/null
-	echo -e "$bold[-] Getallurls $end:$red $(wc -l < output/$company_name/urls/$domain_name-getallurls.txt ) $end$icon"
+	spinner "${red}gau ${end}" & PID="$!" 
+	gau -subs $domain_name 1> output/$company_name/urls/$domain_name-gau.txt 2> /dev/null
+	echo -e "$bold[-] gau $end:$red $(wc -l < output/$company_name/urls/$domain_name-gau.txt ) $end$icon"
 	
 	kill ${PID}
 	echo -e ""
