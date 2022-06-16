@@ -135,7 +135,7 @@ list=(
 	amass
 	assetfinder
 	httpx
-	getallurls
+	gau
 	waybackurls
 	unfurl
 	gf
