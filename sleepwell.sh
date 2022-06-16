@@ -62,18 +62,12 @@ mkdir -p output/$company_name/screenShots/
 mkdir -p output/$company_name/urls/vulns
 mkdir -p output/$company_name/urls/params/
 results=output/$company_name
-
-echo -e ""
 echo -e ""
 
 echo -e "$blue Directories are ready to use :D $end"
 echo -e ""
 echo -e ""
 
-echo -e "$blue Output will be under : $end"
-echo -e "$blue $PLC/$results/ $end"
-
- 
 }
 
 
@@ -97,7 +91,7 @@ wayback_subs(){
 spinner "${bold}WaybackMachine${end}" & PID="$!" 
 curl -sk "http://web.archive.org/cdx/search/cdx?url=*.$domain_name&output=txt&fl=original&collapse=urlkey&page=" | awk -F/ '{gsub(/:.*/, "", $3); print $3}' | sort -u 1> $results/subdomainEnum/$domain_name-wayback_subs.txt 2>/dev/null
 kill ${PID}
-echo -e "$bold[-] WaybackMachine $end:$red $(wc -l < $results/subdomainEnum/$domain_name-wayback_subs.txt ) $end"
+echo -e "$bold[-] WaybackMachine $end:$red $(wc -l < $results/subdomainEnum/$domain_name-wayback_subs.txt ) $end$icon"
 
 }
 # - Crt.sh - #
@@ -185,7 +179,7 @@ echo -e "$red Subdomain Enumuration Done results will under :$end"
 echo -e "$results/subdomainEnum/"
 
 echo ""
-echo -e "$bold------------------------------------$end"
+echo -e "$bold-------------------------------------------------------$end"
 echo ""
 
 }
@@ -214,6 +208,7 @@ echo -e ""
 echo -e "$red Done Alive Subdomains Checking results are in :$end"
 echo -e "$results/aliveSubdomains/"
 echo -e ""
+echo -e "$bold-------------------------------------------------------$end"
 
 }
 
@@ -267,7 +262,8 @@ echo -e "$bold[-] Done paramlist,php,aspx,jsp  $end"
 
 
 echo -e ""
-echo -e "$bold------------------------------------$end"
+echo -e "$bold-------------------------------------------------------$end"
+
 echo -e ""
 
 	}
@@ -286,7 +282,7 @@ gettingGfLinks(){
 
 echo -e "$bold[-] Done Parameters using Gf $end"
 echo -e ""
-echo -e "$bold------------------------------------$end"
+echo -e "$bold-------------------------------------------------------$end"
 echo -e ""
 }
 
@@ -308,7 +304,7 @@ cd $PLC
 
 echo -e "$red Done ScreenShots .... $end"
 echo -e ""
-echo -e "$bold------------------------------------$end"
+echo -e "$bold-------------------------------------------------------$end"
 echo -e ""
 }
 
@@ -332,5 +328,10 @@ gettingGfLinks
 gettingScreenShots
 
 echo -e ""
+
+echo -e "$blue Output will be under : $end"
+echo -e "$blue $PLC/$results/ $end"
+
+ 
 echo -e "$bold---------------- Done wih love Happy Hunting -----------------$end"
 echo -e ""
