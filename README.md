@@ -1,5 +1,5 @@
 # sleepRecon
-Automate simple recon tasks using bash script 
+Automating Boring Recon stuff 
 ### Available Tools and online services:
 1. Tools:
   - [Findomain](https://github.com/Edu4rdSHL/findomain)
