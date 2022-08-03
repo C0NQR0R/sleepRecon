@@ -21,7 +21,7 @@ Automating Boring Recon stuff
 ## Installation:
 ```bash
 git clone https://github.com/qaramany0x01/sleepRecon.git
-cd sleepRecon && chmod +x install.sh sleepRecon.sh
+cd sleepRecon && chmod +x install.sh sleepRecon
 sudo ./install.sh 
 ```
 
