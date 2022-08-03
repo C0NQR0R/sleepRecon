@@ -96,7 +96,7 @@ Gowitness() {
 }
 
 
-hash go 2>/dev/null && printf "[!] Golang is already installed.\n" || { printf "[+] Installing GOlang!" && GOlang; } 
+hash go 2>/dev/null && printf "[!] Golang is already installed.\n"  
 
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
