@@ -88,6 +88,12 @@ Gowitness() {
 
 }
 
+Gf(){
+	printf "                                \r"
+	go install github.com/gogf/gf/v2@latest &>/dev/null
+	printf "[+] Gf Installed !.\n"
+	
+}
 
 hash go 2>/dev/null && printf "[!] Golang is already installed.\n"  
 
@@ -104,7 +110,7 @@ hash httpx 2>/dev/null && printf "[!] httpx is already installed.\n" || { printf
 hash gau 2>/dev/null && printf "[!] getallurls is already installed.\n" || { printf "[+] Installing getallurls!" && Getallurls; }
 hash waybackurls 2>/dev/null && printf "[!] waybackurls is already installed.\n" || { printf "[+] Installing waybackurls!" && Waybackurls; }
 hash unfurl 2>/dev/null && printf "[!] unfurl is already installed.\n" || { printf "[+] Installing unfurl!" && Unfurl; }
-#hash gf 2>/dev/null && printf "[!] gf is already installed.\n" || { printf "[+] Installing gf!" && Gf ; }
+hash gf 2>/dev/null && printf "[!] gf is already installed.\n" || { printf "[+] Installing gf!" && Gf ; }
 hash gowitness 2>/dev/null && printf "[!] gowitness is already installed.\n" || { printf "[+] Installing gowitness!" && Gowitness; }
 
 
