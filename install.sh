@@ -125,6 +125,7 @@ list=(
 	waybackurls
 	unfurl
 	gowitness
+	gf
 
 	
 	)
