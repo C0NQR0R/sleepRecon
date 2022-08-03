@@ -16,20 +16,20 @@ Findomain() {
 
 Subfinder() {
 	printf "                                \r"
-	GO111MODULE=on go get -u -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder &>/dev/null
+	go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest &>/dev/null
 	printf "[+] Subfinder Installed !.\n"
 }
 
 
 Amass() {
 	printf "                                \r"
-	GO111MODULE=on go get -v github.com/OWASP/Amass/v3/... &>/dev/null
+	go install -v github.com/OWASP/Amass/v3/...@master &>/dev/null
 	printf "[+] Amass Installed !.\n"
 }
 
 Assetfinder() {
 	printf "                                \r"
-	go get -u github.com/tomnomnom/assetfinder &>/dev/null
+	go install github.com/tomnomnom/assetfinder@latest &>/dev/null
 	printf "[+] Assetfinder Installed !.\n"
 }
 
@@ -77,14 +77,7 @@ Unfurl() {
 }
 
 ## If you already installed Go lang You should install Gf manual
-Gf() {
-		printf "                                \r"
-		go install github.com/gogf/gf/cmd/gf/v2@latest &>/dev/null
-		echo 'source $GOPATH/src/github.com/tomnomnom/gf/gf-completion.bash' >> ~/.bashrc
-		mkdir ~/.gf 2> /dev/null
-		cp -r $GOPATH/src/github.com/tomnomnom/gf/examples ~/.gf 2> ~/.bashrc
 
-}
 
 
 Gowitness() {
@@ -111,7 +104,7 @@ hash httpx 2>/dev/null && printf "[!] httpx is already installed.\n" || { printf
 hash gau 2>/dev/null && printf "[!] getallurls is already installed.\n" || { printf "[+] Installing getallurls!" && Getallurls; }
 hash waybackurls 2>/dev/null && printf "[!] waybackurls is already installed.\n" || { printf "[+] Installing waybackurls!" && Waybackurls; }
 hash unfurl 2>/dev/null && printf "[!] unfurl is already installed.\n" || { printf "[+] Installing unfurl!" && Unfurl; }
-hash gf 2>/dev/null && printf "[!] gf is already installed.\n" || { printf "[+] Installing gf!" && Gf ; }
+#hash gf 2>/dev/null && printf "[!] gf is already installed.\n" || { printf "[+] Installing gf!" && Gf ; }
 hash gowitness 2>/dev/null && printf "[!] gowitness is already installed.\n" || { printf "[+] Installing gowitness!" && Gowitness; }
 
 
@@ -125,7 +118,6 @@ list=(
 	gau
 	waybackurls
 	unfurl
-	gf
 	gowitness
 
 	
