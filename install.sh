@@ -90,7 +90,7 @@ Gowitness() {
 
 Gf(){
 	printf "                                \r"
-	go install github.com/gogf/gf/v2@latest &>/dev/null
+	go install github.com/tomnomnom/gf@latest &>/dev/null
 	printf "[+] Gf Installed !.\n"
 	
 }
