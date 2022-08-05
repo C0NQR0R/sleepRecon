@@ -59,7 +59,7 @@ Getallurls(){
 }
 
 
-go install github.com/tomnomnom/waybackurls@latest
+
 
 waybackurls() {
 	printf "                                \r"
@@ -96,10 +96,6 @@ Gf(){
 }
 
 hash go 2>/dev/null && printf "[!] Golang is already installed.\n"  
-
-export GOROOT=/usr/local/go
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 
 hash findomain 2>/dev/null && printf "[!] Findomain is already installed.\n" || { printf "[+] Installing Findomain!" && Findomain; }
