@@ -8,9 +8,11 @@ echo "INstalling Requirements ...."
 
 Findomain() {
 	printf "                                \r"
-	wget https://github.com/Edu4rdSHL/findomain/releases/latest/download/findomain-linux &>/dev/null
-	chmod +x findomain-linux
-	./findomain-linux -h &>/dev/null && { sudo mv findomain-linux /usr/local/bin/findomain; printf "[+] Findomain Installed !.\n"; } || printf "[!] Install Findomain manually: https://github.com/Findomain/Findomain/blob/master/docs/INSTALLATION.md\n"
+	apt install unzip &>/dev/null
+	curl -LO https://github.com/Findomain/Findomain/releases/latest/download/findomain-linux.zip &>/dev/null
+	unzip findomain-linux.zip
+	chmod +x findomain
+	./findomain -h &>/dev/null && { sudo mv findomain /usr/local/bin/; printf "[+] Findomain Installed !.\n"; } || printf "[!] Install Findomain manually: https://github.com/Findomain/Findomain/blob/master/docs/INSTALLATION.md\n"
 }
 
 
@@ -82,6 +84,8 @@ Unfurl() {
 
 Gowitness() {
 	printf "                                \r"
+	apt-get install build-essential &>/dev/null
+	
 	go install github.com/sensepost/gowitness@latest &>/dev/null
 	printf "[+] Gowitness Installed !.\n"
 
