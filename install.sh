@@ -37,8 +37,6 @@ Assetfinder() {
 
 
 
-
-
 Pip() {
 	printf "                                \r"
 	sudo apt install pip &>/dev/null
@@ -61,8 +59,6 @@ Getallurls(){
 }
 
 
-
-
 waybackurls() {
 	printf "                                \r"
 	go install github.com/tomnomnom/waybackurls@latest &>/dev/null
@@ -79,18 +75,7 @@ Unfurl() {
 }
 
 ## If you already installed Go lang You should install Gf manual
-
-
-
-Gowitness() {
-	printf "                                \r"
-	apt-get install build-essential &>/dev/null
-	
-	go install github.com/sensepost/gowitness@latest &>/dev/null
-	printf "[+] Gowitness Installed !.\n"
-
-
-}
+## Tut ▶️ https://www.youtube.com/watch?v=m7JzOZKwbeE
 
 Gf(){
 	printf "                                \r"
@@ -99,19 +84,46 @@ Gf(){
 	
 }
 
-hash go 2>/dev/null && printf "[!] Golang is already installed.\n"  
 
+Gowitness() {
+	printf "                                \r"
+	apt-get install build-essential &>/dev/null
+	go install github.com/sensepost/gowitness@latest &>/dev/null
+	printf "[+] Gowitness Installed !.\n"
+
+}
+
+
+SubENum() {
+	printf "                                \r"
+	git clone https://github.com/bing0o/SubEnum.git
+	sudo mv ./SubEnum/subenum /usr/bin
+	printf "[+] SubENum Installed !.\n"
+}
+
+Httprobe() {
+	printf "                                \r"
+	go install -v github.com/tomnomnom/httprobe@latest
+	printf "[+] Httprobe Installed !.\n"
+}
+
+
+
+hash go 2>/dev/null && printf "[!] Golang is already installed.\n"  
+# If not see this ▶️ https://www.youtube.com/watch?v=98rlTosOqFQ
 
 hash findomain 2>/dev/null && printf "[!] Findomain is already installed.\n" || { printf "[+] Installing Findomain!" && Findomain; }
 hash subfinder 2>/dev/null && printf "[!] subfinder is already installed.\n" || { printf "[+] Installing subfinder!" && Subfinder; }
 hash amass 2>/dev/null && printf "[!] Amass is already installed.\n" || { printf "[+] Installing Amass!" && Amass; }
 hash assetfinder 2>/dev/null && printf "[!] Assetfinder is already installed.\n" || { printf "[+] Installing Assetfinder!" && Assetfinder; }
 hash httpx 2>/dev/null && printf "[!] httpx is already installed.\n" || { printf "[+] Installing httpx!" && Httpx; } 
-hash gau 2>/dev/null && printf "[!] getallurls is already installed.\n" || { printf "[+] Installing getallurls!" && Getallurls; }
+hash gau 2>/dev/null && printf "[!] getallurls (gau) is already installed.\n" || { printf "[+] Installing getallurls!" && Getallurls; }
 hash waybackurls 2>/dev/null && printf "[!] waybackurls is already installed.\n" || { printf "[+] Installing waybackurls!" && Waybackurls; }
 hash unfurl 2>/dev/null && printf "[!] unfurl is already installed.\n" || { printf "[+] Installing unfurl!" && Unfurl; }
 hash gf 2>/dev/null && printf "[!] gf is already installed.\n" || { printf "[+] Installing gf!" && Gf ; }
 hash gowitness 2>/dev/null && printf "[!] gowitness is already installed.\n" || { printf "[+] Installing gowitness!" && Gowitness; }
+hash parallel 2>/dev/null && printf "[!] Parallel is already installed.\n" || { printf "[+] Installing Parallel!" && Parallel; }
+hash httprobe 2>/dev/null && printf "[!] Httprobe is already installed.\n" || { printf "[+] Installing Httprobe!" && Httprobe; }
 
 
 list=(
@@ -126,8 +138,7 @@ list=(
 	unfurl
 	gowitness
 	gf
-
-	
+	parallel
 	)
 
 
@@ -140,7 +151,3 @@ for prg in ${list[@]}
 do
         hash $prg 2>/dev/null && printf "[$prg]$g Done$e\n" || printf "[$prg]$r Not Installed! Check Again.$e\n"
 done
-
-
-
-
