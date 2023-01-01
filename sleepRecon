@@ -30,8 +30,8 @@ spinner(){
 	done
 }
 
-echo -e -n "$green Enter Company Name : $end" ; read company_name
-echo -e -n "$green Enter The domain : $end" ; read domain_name
+echo -e -n "$green Enter Company Name: $end" ; read company_name
+echo -e -n "$green Enter The domain: $end" ; read domain_name
 
 
 HouseKeeping(){
@@ -71,7 +71,7 @@ techFiltering(){
                 cat output/$company_name/$domain_name/aliveSub/alive-$domain_name.txt  | grep -i ruby | cut -d " " -f1 > output/$company_name/$domain_name/techFilter/Ruby.txt
                 cat output/$company_name/$domain_name/aliveSub/alive-$domain_name.txt  | grep -i s3 | cut -d " " -f1 > output/$company_name/$domain_name/techFilter/S3.txt
                 cat output/$company_name/$domain_name/aliveSub/alive-$domain_name.txt  | grep -i /s/ | cut -d " " -f1 >> output/$company_name/$domain_name/techFilter/SalesForce.txt
-	        cat output/$company_name/$domain_name/aliveSub/alive-$domain_name.txt  | grep -i /aura | cut -d " " -f1 >> output/$company_name/$domain_name/techFilter/SalesForce.txt
+	        	cat output/$company_name/$domain_name/aliveSub/alive-$domain_name.txt  | grep -i /aura | cut -d " " -f1 >> output/$company_name/$domain_name/techFilter/SalesForce.txt
 
 		echo -e "$green[-] Technology IIS $end:$blue $(wc -l < output/$company_name/$domain_name/techFilter/IIS.txt ) $end"
 		echo -e "$green[-] Technology nginx $end:$blue $(wc -l < output/$company_name/$domain_name/techFilter/Nginx.txt ) $end"
