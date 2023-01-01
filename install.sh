@@ -101,11 +101,6 @@ SubENum() {
 	printf "[+] SubENum Installed !.\n"
 }
 
-Httprobe() {
-	printf "                                \r"
-	go install -v github.com/tomnomnom/httprobe@latest
-	printf "[+] Httprobe Installed !.\n"
-}
 
 
 
@@ -122,9 +117,7 @@ hash waybackurls 2>/dev/null && printf "[!] waybackurls is already installed.\n"
 hash unfurl 2>/dev/null && printf "[!] unfurl is already installed.\n" || { printf "[+] Installing unfurl!" && Unfurl; }
 hash gf 2>/dev/null && printf "[!] gf is already installed.\n" || { printf "[+] Installing gf!" && Gf ; }
 hash gowitness 2>/dev/null && printf "[!] gowitness is already installed.\n" || { printf "[+] Installing gowitness!" && Gowitness; }
-hash parallel 2>/dev/null && printf "[!] Parallel is already installed.\n" || { printf "[+] Installing Parallel!" && Parallel; }
-hash httprobe 2>/dev/null && printf "[!] Httprobe is already installed.\n" || { printf "[+] Installing Httprobe!" && Httprobe; }
-
+hash sunenum 2>/dev/null && printf "[!] SubENum is already installed.\n" || { printf "[+] Installing SubENum!" && SubENum; }
 
 list=(
 	go
@@ -138,7 +131,7 @@ list=(
 	unfurl
 	gowitness
 	gf
-	parallel
+	subenum
 	)
 
 
